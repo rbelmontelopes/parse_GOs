@@ -1,10 +1,10 @@
 import os
 import pandas as pd
+import sys
 
-# set dir were the file is
-os.chdir('/mnt/hd/GOs')
+file=sys.argv[1]
 #read the file
-GOs= open("go.obo").readlines()
+GOs= open(file).readlines()
 
 #create empty lists to populate with the terms
 go_list_ID=[]
